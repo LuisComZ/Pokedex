@@ -1,5 +1,146 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300;400;500;600;700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@600&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@400;500;700&family=Roboto+Mono:wght@700&family=Roboto:wght@500;700&display=swap");
 
-*{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: white;
+  color: #242424;
+}
+
+body.dark_mode {
+  background-color: #212121;
+  color: #f5f5f5;
+}
+
+header {
+  padding: 25px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,
+.button_image {
+  width: 40px;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover,
+.button_image:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#change_theme_button {
+  background: none;
+  border: none;
+}
+
+main {
+  padding: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+.pokemon_listing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.pokemon_card {
+  width: 170px;
+  padding: 15px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  background-color: #d8ecff;
+
+  transition: 0.2s ease-in-out;
+}
+
+.pokemon_card:hover {
+  background-color: #96d9d6;
+  transform: scale(1.05);
+}
+
+.dark_mode .pokemon_card {
+  background-color: #a8a8a8;
+}
+
+.info {
+  border: 1px solid #242424;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.info span {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.gif {
+  width: 75px;
+  height: 75px;
+}
+
+.types {
+  display: flex;
+  gap: 15px;
+}
+
+.type {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.grass {
+  background-color: #7ac74c;
+}
+
+.poison {
+  background-color: #df67ddfb;
+}
+
+.fire {
+  background-color: #ee8130;
+}
+
+.flying {
+  background-color: #a98ff3;
+}
+
+.water {
+  background-color: #6390f0;
+}
+
+.bug {
+  background-color: #a6b91a;
+}
+
+.description {
+  max-height: 150px;
+  padding-left: 15px;
+
+  overflow-y: scroll;
+
+  font-size: 12px;
+  text-align: center;
 }
