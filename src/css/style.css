@@ -16,7 +16,7 @@ body {
 
 body.dark_mode {
   background-color: #212121;
-  color: #f5f5f5;
+  color: white;
 }
 
 header {
@@ -79,7 +79,11 @@ ul {
 }
 
 .dark_mode .pokemon_card {
-  background-color: #a8a8a8;
+  background-color: #747474;
+}
+
+.dark_mode .pokemon_card:hover {
+  background-color: #a3a3a3;
 }
 
 .info {
@@ -88,6 +92,10 @@ ul {
 
   display: flex;
   justify-content: space-between;
+}
+
+.dark_mode .info{
+  border: 1px solid white;
 }
 
 .info span {
